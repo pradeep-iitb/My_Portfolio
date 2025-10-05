@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="refresh" content="3" > -->
+  <title>Scroll Animation</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0%;
+    }
+    body {
+      height: 200vh; /* just to make scrolling possible */
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    h1{
+      background: linear-gradient(to left,rgb(177, 6, 6),rgb(173, 5, 83));
+        color: transparent;
+        background-clip: initial;
+        -webkit-background-clip: text;
+        background-color: rgb(161, 129, 190);
+        display: inline-block;
+        text-align: centre;
+        width: 250px;
+        font-size: 50px;
+        align-self: centre;
+    }
+    h3{
+      background: linear-gradient(to left,rgb(6, 143, 177),rgb(5, 173, 159));
+        color: transparent;
+        background-clip: initial;
+        -webkit-background-clip: text;
+        font-size: 30px;
+        -webkit-text-stroke: blueviolet;
+    }
+    p {
+      color:rgb(175, 208, 228);
+      font-size: 20px;
+    }
+    .box {
+      width: 400px;
+      background: linear-gradient(45deg,rgb(14, 14, 99),rgb(219, 7, 42));
+      margin: 150px auto;
+      border-radius: 12px;
+      text-align: center;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+
+      /* hidden at start */
+      transform: translate(0,60px);
+      opacity: 0;
+      transition: all 0.8s ease-out;
+    }
+
+    .box.show {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+        .box1 {
+      width: 400px;
+      background: linear-gradient(45deg,rgb(14, 14, 99),rgb(219, 7, 42));
+      margin: 150px auto;
+      border-radius: 12px;
+      text-align: center;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+
+      /* hidden at start */
+      transform: translate(0,60px);
+      opacity: 0;
+      transition: all 0.8s ease-out;
+    }
+
+    .box1.show {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .box2 {
+      width: 400px;
+      background: linear-gradient(45deg,rgb(14, 14, 99),rgb(219, 7, 42));
+      margin: 150px auto;
+      border-radius: 12px;
+      text-align: center;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+
+      /* hidden at start */
+      transform: translate(0,60px);
+      opacity: 0;
+      transition: all 0.8s ease-out;
+    }
+
+    .box2.show {
+      transform: translate(0);
+      opacity: 1;
+    }
+    .mentorship {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  </style>
+  <link rel="stylesheet" href="./style.css" >
+</head>
+<body>
+  <h1>InCuBte</h1>
+<div class="animatedContainer" style="display: flex;
+justify-content: space-evenly;">
+<div style="
+padding: 10px;
+margin: 50px;
+border: blue solid 2px;
+width: 300px;display: flex;
+justify-content: center;
+align-items: flex-start;
+transform: skew(0deg);
+flex-direction: column;position: relative; left: 10px;bottom: 60px;z-index: 0;background: #27212121;" >
+  
+  <h3>Hello Ridhi</h3>
+<p class="ridhi"  > Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quae dolorum reiciendis repellendus numquam, ullam ut quos esse eligendi, sed aspernatur temporibus perferendis odio tempora atque excepturi labore commodi dolore?</p>
+</div>
+<div class="spline"><iframe src='https://my.spline.design/genkubgreetingrobot-45i739Lm8APvQcsIC9RGkRyv/' frameborder='0' width='800px' height='600px' style="position: relative;
+right: 400px;
+z-index: 1;"></iframe></div>
+<path class="ecg-line" d="M0,50 L100,50 L120,50 L130,20 L140,80 L150,30 L160,70 L170,50 L200,50 L300,50 L320,50 L330,20 L340,80 L350,30 L360,70 L370,50 L400,50 L500,50 L520,50 L530,20 L540,80 L550,30 L560,70 L570,50 L600,50 L700,50 L720,50 L730,20 L740,80 L750,30 L760,70 L770,50 L800,50 L900,50 L920,50 L930,20 L940,80 L950,30 L960,70 L970,50 L1000,50" fill="none" stroke="url(#ecgGradient)" stroke-width="3"></path>
+</div>
+
+<p class="text" style="color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet provident sed cum sapiente eaque hic ut consectetur aperiam ratione tempora? Odio perspiciatis modi temporibus veritatis itaque cumque deleniti sapiente animi.
+Dolor velit reiciendis maxime, perferendis quisquam aperiam aliquam libero saepe officia eum in qui ipsa. Nostrum provident dignissimos, dolorum itaque id repellendus, deleniti voluptate placeat a necessitatibus ad, non saepe.
+Autem maxime dolorem voluptatem voluptates veniam, consequuntur vero aliquid eius quia temporibus molestias magnam consequatur fugiat aperiam minima sed eaque doloribus libero nulla, ullam ea ducimus doloremque laboriosam. Libero, consectetur!
+Ullam, illum voluptates ut odit soluta ad laudantium nam vitae temporibus consequuntur voluptas quam porro non deserunt nihil quae ipsa hic. Error, nemo rerum! Deserunt officiis eveniet sint consequatur labore?
+Perferendis adipisci consequuntur aut perspiciatis eum, commodi recusandae eveniet voluptatibus asperiores sint, error quisquam impedit quaerat similique? Eius ea expedita eaque aspernatur, nemo deleniti ullam adipisci quidem facere. Ratione, nihil.
+Odio doloremque placeat cupiditate similique dicta. Facere, nostrum culpa illo saepe tempore ut dignissimos ex distinctio, atque quas doloremque delectus, reprehenderit non dolores eaque quisquam ipsa reiciendis architecto voluptatem iure.
+Praesentium, culpa quaerat exercitationem nulla ad perferendis reprehenderit possimus accusantium architecto sed dolorem explicabo recusandae iure quos, id corrupti itaque doloribus sequi tenetur quo, voluptatibus in sapiente. Natus, dolorem quisquam!
+Sed quas soluta facere placeat distinctio, minus facilis. Culpa, corrupti sed fugit similique illum accusantium adipisci nulla vitae porro ducimus, sint recusandae laborum velit a optio repellat tenetur. Saepe, inventore.
+Alias natus, hic odio at delectus rerum tempore quibusdam rem in placeat enim quasi molestias. Fugiat numquam perferendis debitis! Sint doloribus illo praesentium nihil molestiae enim? Recusandae unde eum autem.
+Fugit ut vel sed libero nihil quibusdam! Ipsa cum quia, at voluptates, eveniet, voluptate facilis dicta possimus illum perspiciatis soluta placeat cupiditate iste autem mollitia repellendus quidem obcaecati dolorum dolor?
+Impedit qui, autem aliquid molestias a eligendi dicta quia ullam corrupti voluptates atque voluptatem tenetur ipsum. Ducimus, hic nulla? Maxime magni quo asperiores repellat fuga quas suscipit tempore sint iste.
+Saepe ad optio dolorum magni id? Non, quisquam quis. Esse sed deleniti eveniet nulla aspernatur ipsum odit, exercitationem in fuga commodi error soluta non quasi, ratione sit dolorem laborum corrupti.
+Aliquam atque corrupti molestiae similique sint distinctio, veritatis modi sunt quam inventore! Dolor quidem, quisquam minima et optio temporibus quia sunt in voluptatum voluptates veritatis perspiciatis dolores soluta, vitae velit!
+Recusandae a sunt rem repellatonsequuntur dolore atque quos tenetur omnis, vel quia tempora ratione ad illum. Hic.
+Perferendis voluptatum numquam quam sequi. Ut consectetur ipsam, laudantium fugit iste voluptatum quisquam explicabo minima, ad magnam fuga, porro exercitationem ab ex natus ullam veritatis molestias numquam quaerat esse velit!
+Eligendi libero veritatis illum nesciunt illo temporibus, asperiores modi doloremque ipsam assumenda facere cupiditate sequi nihil aspernatur quae voluptatibus, quibusdam ex possimus quisquam. Corporis voluptatum reprehenderit sed accusantium eos doloremque!
+Laboriosam voluptate veritatis ab provident deleniti velit suscipit eius officiis, delectus nemo dolore nam? Reprehenderit blanditiis esse repellat. Itaque ratione enim fugit ullam quidem expedita temporibus esse animi facere iste.
+Fuga vero ad velit excepturi, modi asperiores ducimus, amet non architecto quidem exercitationem commodi, vitae ipsa et nostrum sit incidunt id laboriosam repudiandae neque laborum quo dolorem nobis. Debitis, assumenda!
+Cumque exercitationem facilis quidem ex alias similique quo voluptatem vitae mollitia fugiat nisi ducimus quod quia ab, dolor blanditiis sequi asperiores amet. Accusamus perspiciatis illo sint ex doloremque, voluptate repellat?
+Dignissimos ullam pariatur, nisi laudantium explicabo eos? Nemo libero nobis, velit totam est pariatur similique quaerat reprehenderit hic culpa laboriosam iste sunt? Obcaecati quam, enim minima recusandae voluptates repudiandae natus.
+Aliquam consectetur dolore dolor cupiditate debitis eaque, repellat recusandae, corrupti ad rerum possimus aliquid. Laborum praesentium impedit veritatis repellendus, reprehenderit minima similique porro quia officiis consectetur, totam, incidunt natus assumenda.
+Debitis ex consequuntur ab porro molestiae in deserunt, hic quis tempora. Distinctio blanditiis quidem laudantium, tempora a temporibus odio maiores adipisci. Modi esse provident at ut, consequatur saepe. Nobis, nostrum.
+Officia blanditiis, consequatur rerum incidunt sint dolore sunt esse at exercitationem? Repellendus facere maiores libero dignissimos corporis possimus, iure commodi officiis velit esse quod aut doloribus aspernatur quibusdam odit cum.
+Repellendus laboriosam unde molestiae rerum voluptatibus, amet sapiente adipisci dicta illum qui assumendaus ipsa itaque ab dolore iste recusandae quidem nesciunt voluptatibus repudiandae. Eaque, odit libero?
+Voluptates exercitationem et, ratione tempora sed deserunt, in assumenda molestiae adipisci unde temporibus quaerat eos commodi ea explicabo enim, doloremque quo sint architecto at? Voluptatibus ratione soluta distinctio ducimus dicta.
+Eligendi saepe vero excepturi eum quidem libero error quod, explicabo, nisi nihil quibusdam aliquid autem dolor nemo fuga harum obcaecati quaerat accusantium animi eos laudantium. Et repudiandae ad illo fugit.
+Laboriosam voluptatibus repellendus nihil corporis, nostrum perspiciatis necessitatibus praesentium corrupti ab, sapiente enim unde aspernatur aliquid! Eum quo velit voluptatibus voluptates accusamus, cum magni aliquid quia nisi, minus, praesentium nam.
+Nostrum maxime optio ab repellat modi. Nihil perferendis assumenda earum doloribus repellat dicta deserunt, velit porro. Perferendis fugiat, repudiandae alias autem, illo magni et quis aliquid reprehenderit expedita, laudantium ex!
+Dolore dolor nobis ratione temporibus ex optio culpa maiores laboriosam? Iste obcaecati inventore, seqionem odio cumque eius fuga dolorum sequi minus aspernatur voluptatibus, laudantium cum repellat!
+A atque facere sunt alias autem totam quae. Eligendi, corrupti inventore error recusandae quod, beatae vero ipsum quasi atque repellat voluptatum sunt harum pariatur dicta ratione fugit iste dolore! Quod.</p>
+ <div class="mentorship">
+   <div class="box">
+    <img src="./mentorship.webp" style="height: 90px; width: 100px; border-radius:50% ;border: black solid 1px;">
+    <h3>Mentorship</h3>
+  <p>Get guidance from faculty mentors from IIT Bombay through hackathon process. </p></div>
+  <div class="box1">
+    <img src="./mentorship.webp" style="height: 90px; width: 100px; border-radius:50% ;border: black solid 1px;">
+    <h3>Mentorship</h3>
+  <p>Get guidance from faculty mentors from IIT Delhi through hackathon process. </p></div>
+  <div class="box2">
+    <img src="./mentorship.webp" style="height: 90px; width: 100px; border-radius:50% ;border: black solid 1px;">
+    <h3>Mentorship</h3>
+  <p>Get guidance from faculty mentors from IIT Madras through hackathon process. </p>
+</div>
+ </div>
+
+  <script>
+    const box = document.querySelector('.box');
+    const box1 = document.querySelector('.box1');
+    const box2 = document.querySelector('.box2');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          box.classList.add('show');
+          box1.classList.add('show');
+          box2.classList.add('show');
+        }
+      });
+    });
+
+    observer.observe(box);
+    observer.observe(box1);
+    observer.observe(box2);
+  </script>
+</body>
+</html>
